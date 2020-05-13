@@ -51,7 +51,6 @@ class AddPlants extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
         alert(`Selected file - ${this.fileInput.current.files[0].name}`)
-        this.props.addNewPlantFunc(this.state.plantName, this.state.picture, this.state.description, this.state.location, this.state.email);
     };
 
     render() {
