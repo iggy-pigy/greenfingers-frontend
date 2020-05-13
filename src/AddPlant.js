@@ -25,7 +25,7 @@ class AddPlants extends React.Component {
         this.setState({
             plantName: event.target.value,
         });
-
+        console.log(event.target.value);
     };
 
 
@@ -34,6 +34,7 @@ class AddPlants extends React.Component {
             description: event.target.value,
 
         });
+        console.log(event.target.value);
     };
 
     updatePlantLocation = event => {
