@@ -3,6 +3,11 @@ import "./AddPlant.css";
 
 
 class AddPlants extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.fileInput = React.createRef();
+    }
     state = {
         plantName: "",
         picture: "",
@@ -45,7 +50,9 @@ class AddPlants extends React.Component {
         });
     };
 
-    addPlant = () => {
+    handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`Selected file - ${this.fileInput.current.files[0].name}`)
         this.props.addNewPlantFunc(this.state.plantName, this.state.picture, this.state.description, this.state.location, this.state.email);
     };
 
@@ -55,7 +62,7 @@ class AddPlants extends React.Component {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="well well-sm">
-                            <form onSubmit={this.addPlant} class="form-horizontal" method="post" >
+                            <form onSubmit={this.handleSubmit} class="form-horizontal" method="post" >
                                 <fieldset>
                                     <legend class="text-center header">Add Plant</legend>
 
@@ -68,7 +75,7 @@ class AddPlants extends React.Component {
                                     <div class="form-group">
                                         <span class="col-sm-1 col-sm-offset-2 text-right"><i class="fa fa-camera bigicon"></i></span>
                                         <div class="col-sm-8">
-                                            <input type="file" value={this.state.picture} onChange={this.updatePlantPicture} id="picture" class="form-control" placeholder="Upload plant picture" />
+                                            <input type="file" ref={this.fileInput} onChange={this.updatePlantPicture} id="picture" class="form-control" placeholder="Upload plant picture" />
                                         </div>
                                     </div>
                                     <div class="form-group">
