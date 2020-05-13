@@ -6,16 +6,18 @@ class AddPlants extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.updatePlantName = this.updatePlantName.bind(this);
+        this.updatePlantDescription = this.updatePlantDescription.bind(this);
+        this.updatePlantLocation = this.updatePlantLocation.bind(this);
+        this.updateEmail = this.updateEmail.bind(this);
         this.fileInput = React.createRef();
+        this.state = {
+            plantName: "",
+            description: "",
+            location: "",
+            email: "",
+        }
     }
-    state = {
-        plantName: "",
-        picture: "",
-        description: "",
-        location: "",
-        email: ""
-    };
-
 
 
 
@@ -25,11 +27,7 @@ class AddPlants extends React.Component {
         });
 
     };
-    updatePlantPicture = event => {
-        this.setState({
-            picture: event.target.value,
-        });
-    };
+
 
     updatePlantDescription = event => {
         this.setState({

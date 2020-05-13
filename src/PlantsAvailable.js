@@ -19,11 +19,11 @@ class PlantsAvailable extends React.Component {
         axios
             .get("https")
             .then(response => {
-                const plants = response.data.plant;
+                const plantList = response.data.plant;
                 console.log(response.data);
-                console.log(plants);
+                console.log(plantList);
                 this.setState({
-                    plants: plants
+                    plants: plantList
                 });
             })
             .catch(err => {
@@ -31,34 +31,12 @@ class PlantsAvailable extends React.Component {
             });
     }
 
-    addNewPlant = plant => {
-        const newPlant = {
-            plant: plant,
-        };
-        //need to install add axios!!!
-        axios
-            .post(
-                "http",
-                newPlant
-            )
-            .then(response => {
-                const newPlantList = response.data;
-                const copyOfPlants = this.state.plants.slice();
-                copyOfPlants.push(newPlantList);
-                this.setState({
-                    plants: copyOfPlants
-                });
-            })
-            .catch(err => {
-                console.log(err);
-            });
-    };
+
 
     render() {
         return (
             <div className="App">
                 <div className="container">
-                    <AddPlant AddNewPlantFunc={this.addNewPlant} />
                     {this.state.plants.map(plant => {
                         return <Plants name={plant.name} description={plant.description} location={plant.location} key={plant.id} />
                     })}
