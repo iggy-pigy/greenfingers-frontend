@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./cactus2.jpg";
-import "./Plants.css";
+
 
 class Plants extends React.Component {
     render() {
