@@ -1,0 +1,36 @@
+.container-fluid{
+    max-width: 80%;
+    background-color: #F5F5F5;
+    background-image: url(pictures/leafs.png);
+    background-size: cover;
+    border-color: rgb(221, 177, 177);
+    border-style: solid;
+}
+
+.new-plant-input {
+    color: black;
+}
+ .form-group{
+     display:flex;
+ }
+
+.header {
+    color: rgb(221, 177, 177);
+    font-size: 35px;
+    padding: 10px;
+    margin: 40px;
+}
+
+.bigicon {
+    font-size: 30px; 
+}
+.col-md-8{
+    margin-left: 40px;
+}
+.button{
+    background-color: rgb(221, 177, 177);
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+    color: black;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,18 @@
+.HomeImage{
+    background-image: url(pictures/homePagePicture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    position: top;
+    background-color: #F0F1F3;
+    height: 300px;
+
+    
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color: black;
+    margin: 0px 25px 0px 25px;
+}

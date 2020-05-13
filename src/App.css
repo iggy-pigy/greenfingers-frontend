@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+
+ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  cursor:pointer;
+  font-size: 30px; 
+}
+a {
+  color:  rgb(221, 177, 177);
+}
+
+a:hover {
+  color:  rgb(159, 216, 208);
+}
+
+
+
+
+
