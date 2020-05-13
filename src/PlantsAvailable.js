@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from "axios";
 import Plants from "./Plants";
-import AddPlant from "./AddPlant";
 
 
 class PlantsAvailable extends React.Component {
