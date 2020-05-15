@@ -91,7 +91,7 @@ class AddPlants extends React.Component {
                                     <div class="form-group">
                                         <span class="col-sm-1 col-sm-offset-2 text-right"><i class="fa fa-envelope-o bigicon"></i></span>
                                         <div class="col-sm-8">
-                                            <input type="text" value={this.state.email} onChange={this.updateEmail} id="email" class="form-control" placeholder="E-mail Address" />
+                                            <input type="email" value={this.state.email} onChange={this.updateEmail} id="email" class="form-control" placeholder="E-mail Address" />
                                         </div>
                                     </div>
                                     <div class="form-group">
