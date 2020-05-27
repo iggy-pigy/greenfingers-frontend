@@ -16,7 +16,7 @@ class PlantsAvailable extends React.Component {
 
     componentDidMount() {
         axios
-            .get("https")
+            .get("http://localhost:3001/plants")
             .then(response => {
                 const plantList = response.data.plant;
                 console.log(response.data);
@@ -37,7 +37,7 @@ class PlantsAvailable extends React.Component {
             <div className="App">
                 <div className="container">
                     {this.state.plants.map(plant => {
-                        return <Plants name={plant.name} description={plant.description} location={plant.location} key={plant.id} />
+                        return <Plants name={plant.name} picture={plant.picture} description={plant.description} location={plant.location} key={plant.id} />
                     })}
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./cactus2.jpg";
 
 
 class Plants extends React.Component {
@@ -10,7 +9,7 @@ class Plants extends React.Component {
                     <p>{this.props.name}</p>
                 </div>
                 <div className="col-12 col-sm-3">
-                    <img src={logo} alt="Logo" />
+                    <img src={this.props.picture} alt="plantPicture" />
                 </div>
                 <div className="col-12 col-sm-4">
                     <p>{this.props.description}</p>
