@@ -6,13 +6,15 @@ class AddPlants extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.updatePlantPicture = this.updatePlantPicture.bind(this);
         this.updatePlantName = this.updatePlantName.bind(this);
         this.updatePlantDescription = this.updatePlantDescription.bind(this);
         this.updatePlantLocation = this.updatePlantLocation.bind(this);
         this.updateEmail = this.updateEmail.bind(this);
-        this.fileInput = React.createRef();
+
         this.state = {
             plantName: "",
+            plantPicture: "",
             description: "",
             location: "",
             email: "",
@@ -24,6 +26,13 @@ class AddPlants extends React.Component {
     updatePlantName = event => {
         this.setState({
             plantName: event.target.value,
+        });
+        console.log(event.target.value);
+    };
+
+    updatePlantPicture = event => {
+        this.setState({
+            plantPicture: event.target.value,
         });
         console.log(event.target.value);
     };
@@ -51,7 +60,7 @@ class AddPlants extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Selected file - ${this.fileInput.current.files[0].name}`)
+
     };
 
     render() {
@@ -73,7 +82,7 @@ class AddPlants extends React.Component {
                                     <div class="form-group">
                                         <span class="col-sm-1 col-sm-offset-2 text-right"><i class="fa fa-camera bigicon"></i></span>
                                         <div class="col-sm-8">
-                                            <input type="file" ref={this.fileInput} onChange={this.updatePlantPicture} id="picture" class="form-control" placeholder="Upload plant picture" />
+                                            <input type="text" value={this.state.plantPicture} onChange={this.updatePlantPicture} id="picture" class="form-control" placeholder="Add link to picture" />
                                         </div>
                                     </div>
                                     <div class="form-group">

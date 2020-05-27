@@ -1,0 +1,25 @@
+{
+    "plants": [
+        {
+            "id": 1,
+            "picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.patchplants.com%2Fgb%2Fen%2Fplants%2Fcactus-20%2F&psig=AOvVaw3lLLE8HJCaCutIJWN0oInQ&ust=1590696490344000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPClgLHs1OkCFQAAAAAdAAAAABAD",
+            "name": "cactus",
+            "description": "Desert plant that has thick, leafless stems covered in prickly spines or sharp spikes.",
+            "location": "Manchester"
+        },
+        {
+            "id": 2,
+            "picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.homescapesonline.com%2Fartificial-fiddle-leaf-fig-tree-in-pot-70-cm-tall.html&psig=AOvVaw1rCVHZC1bqvXmk9eSgWEyQ&ust=1590696554731000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMi2gNHs1OkCFQAAAAAdAAAAABAD",
+            "name": " fiddle-leaf fig",
+            "description": "Has a tropical look with lyre-shaped leaves.",
+            "location": "Chorlton"
+        },
+        {
+            "id": 3,
+            "picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.floraccess.com%2Fen%2Fv%2F35190%2Fvan-der-arend-tropical-plantcenter%2Fphilodendron-melinonii%2F&psig=AOvVaw24a1zhLA5ftc7M-0QiVPDc&ust=1590696618403000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC-t_Hs1OkCFQAAAAAdAAAAABAD",
+            "name": "Philodendron",
+            "description": "Not just a pretty face, though — he’s also super easy to care for, as long as you keep an eye on his light levels and the right amount of watering.",
+            "location": "Didsbury"
+        }
+    ]
+}
