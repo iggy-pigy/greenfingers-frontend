@@ -2,6 +2,7 @@ import React from "react";
 
 
 class Plants extends React.Component {
+
     render() {
         return (
             <div className="row">
@@ -9,10 +10,10 @@ class Plants extends React.Component {
                     <p>{this.props.name}</p>
                 </div>
                 <div className="col-12 col-sm-3">
-                    <img src={this.props.picture} width="200px" height="230px" alt="plantPicture" />
+                    <img src={this.props.picture} style={{ width: 200, height: 230 }} alt="plantPicture" />
                 </div>
                 <div className="col-12 col-sm-4">
-                    <p>{this.props.description}</p>
+                    <p>{this.props.description} </p>
                 </div>
                 <div className="col-12 col-sm-2">
                     <p>{this.props.location}</p>

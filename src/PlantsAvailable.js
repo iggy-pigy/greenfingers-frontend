@@ -5,13 +5,7 @@ import Plants from "./Plants";
 
 class PlantsAvailable extends React.Component {
     state = {
-        plants: [
-
-            /*{ id: 1, name: "cactus", description: "Desert plant that has thick, leafless stems covered in prickly spines or sharp spikes.", location: "Manchester" },
-            { id: 2, name: " fiddle-leaf fig", description: "Has a tropical look with lyre-shaped leaves.", location: "Chorlton" },
-            { id: 3, name: "Philodendron", description: "Not just a pretty face, though — he’s also super easy to care for, as long as you keep an eye on his light levels and the right amount of watering.", location: "Didsbury" }*/
-
-        ]
+        plants: []
     };
 
     componentDidMount() {
