@@ -9,7 +9,7 @@ class Plants extends React.Component {
                     <p>{this.props.name}</p>
                 </div>
                 <div className="col-12 col-sm-3">
-                    <img src={this.props.picture} alt="plantPicture" />
+                    <img src={this.props.picture} width="200px" height="230px" alt="plantPicture" />
                 </div>
                 <div className="col-12 col-sm-4">
                     <p>{this.props.description}</p>
