@@ -1,5 +1,11 @@
 import React from "react";
 
+const styles = {
+    fontSize: "20px",
+    width: "200px",
+    height: "230px"
+
+}
 
 class Plants extends React.Component {
 
@@ -10,16 +16,16 @@ class Plants extends React.Component {
                     <p>{this.props.name}</p>
                 </div>
                 <div className="col-12 col-sm-3">
-                    <img src={this.props.picture} style={{ width: 200, height: 230 }} alt="plantPicture" />
+                    <img src={this.props.picture} style={styles} alt="plantPicture" />
                 </div>
                 <div className="col-12 col-sm-4">
-                    <p>{this.props.description} </p>
+                    <p style={styles}>{this.props.description} </p>
                 </div>
                 <div className="col-12 col-sm-2">
                     <p>{this.props.location}</p>
                 </div>
                 <div className="col-12 col-sm-1">
-                    <button > Contact owner</button>
+                    <button> Contact owner</button>
                 </div>
             </div>
         );
