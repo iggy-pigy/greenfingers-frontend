@@ -11,9 +11,10 @@ class PlantsAvailable extends React.Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:3001/plants")
+            //.get("http://localhost:3001/plants")
+            .get("https://shl5liyt6d.execute-api.eu-west-1.amazonaws.com/dev/plants")
             .then(response => {
-                const plantList = response.data;
+                const plantList = response.data.plants;
                 console.log(response.data);
                 console.log(plantList);
                 this.setState({
