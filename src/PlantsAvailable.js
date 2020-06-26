@@ -26,7 +26,31 @@ class PlantsAvailable extends React.Component {
             });
     }
 
-
+    /*addNewPlant = plant => {
+        const newPlant = {
+          name: name,
+          picture: picture,
+          description: description,
+          location: location,
+          email: email
+        };
+        axios
+          .post(
+            "https://shl5liyt6d.execute-api.eu-west-1.amazonaws.com/dev/plants",
+            newPlant
+          )
+          .then(response => {
+            const newPlantList = response.data;
+            const copyOfPlants = this.state.plants.slice();
+            copyOfPlants.push(newPlantList);
+            this.setState({
+              plants: copyOfPlants
+            });
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      };*/
 
     render() {
         return (
