@@ -25,7 +25,7 @@ class Plants extends React.Component {
                     <p>{this.props.location}</p>
                 </div>
                 <div className="col-12 col-sm-1">
-                    <button> Contact owner</button>
+                    <p>{this.props.email}</p>
                 </div>
             </div>
         );

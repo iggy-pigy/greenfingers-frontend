@@ -33,7 +33,7 @@ class PlantsAvailable extends React.Component {
             <div className="App">
                 <div className="container">
                     {this.state.plants.map(plant => {
-                        return <Plants name={plant.name} picture={plant.picture} description={plant.description} location={plant.location} key={plant.id} />
+                        return <Plants name={plant.name} picture={plant.picture} description={plant.description} location={plant.location} email={plant.email} key={plant.id} />
                     })}
                 </div>
             </div>
