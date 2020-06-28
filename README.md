@@ -1,8 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GreenFingers Application - Frontend
+This is the front end of a GreenFingers Application. It integrates with a backend, available here: https://github.com/iggy-pigy/greenfingers-backend .
 
-## Available Scripts
+## Technology Used
+This project uses the following technology:
 
-In the project directory, you can run:
+* ReactJS
+* JavaScript (ES2015+)
+* CSS
+* HTML
+* Bootstrap
+* Webpack
+* Axios
+
+## Running the application locally
+
+Node.js must be installed if not already.
+Clone the application and install dependencies:
+
+### `npm install`
+
+To start the application run:
 
 ### `npm start`
 
